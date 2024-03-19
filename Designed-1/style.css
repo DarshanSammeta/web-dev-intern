@@ -1,0 +1,217 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.sv-container {
+  width: 100px;
+  height: 100px;
+  top: 0;
+  right: 0;
+}
+
+.svg-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+
+  text-align: center;
+}
+.line {
+  color: #eb87fa;
+}
+.logo {
+  color: white;
+  background-color: #eb87fa;
+  border-radius: 5px;
+  padding: 5px 40px;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+a {
+  max-width: 100%;
+  height: auto;
+  text-decoration: none;
+}
+
+.team1 {
+  text-align: center;
+}
+.team1 p {
+  color: rgb(2, 1, 1);
+}
+.tit1 h3 {
+  color: white;
+  padding: 5px 10px;
+}
+.section {
+  display: flex;
+  align-items: center;
+}
+
+.svt-container {
+  flex-shrink: 0; /* Prevent SVG from shrinking */
+  margin-right: 10px; /* Add some spacing to the right of the SVG */
+}
+
+h3 {
+  margin: 0;
+  text-align: center; /* Center the text horizontally */
+  flex-grow: 1;
+}
+.section h3 {
+  background-color: #eb87fa; /* Set background color */
+  color: #fff; /* Set text color */
+
+  border-radius: 5px; /* Add border radius */
+  padding: 5px 10px; /* Add padding */
+  border-radius: 5px; /* Add border radius */ /* Add margin right */
+  inline-size: 300px;
+  margin: 0 auto;
+}
+.text1-container {
+  flex-grow: 1; /* Allow the text container to grow and take up remaining space */
+  display: flex;
+  margin-right: 85px;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  text-align: center;
+}
+
+/*-----------------------------------*/
+.tit2 {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 10px;
+
+  border-radius: 5px;
+}
+
+.tit2 h3 {
+  background-color: #eb87fa; /* Set background color */
+  color: #fff; /* Set text color */
+  padding: 5px 10px; /* Add padding */
+  border-radius: 5px; /* Add border radius */
+  padding: 5px 10px; /* Add padding */
+  border-radius: 5px; /* Add border radius */
+  margin-right: 10px; /* Add margin right */
+  inline-size: 300px;
+  margin: 0 auto;
+}
+
+.tit2 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+
+  height: 52px;
+}
+.text2-container {
+  flex-grow: 1; /* Allow the text container to grow and take up remaining space */
+  display: flex;
+  margin-left: 166px;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  text-align: center;
+}
+.testimonials {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.pic {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+
+  padding: 20px;
+}
+.pic p {
+  color: #eb87fa;
+}
+
+.pic img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.pic span {
+  font-weight: bold;
+}
+/*-----------------*/
+/* Base styles */
+.testimonial2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.pic2 {
+  text-align: center;
+
+  border-radius: 10px;
+
+  padding: 20px;
+}
+
+.pic2 img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.pic2 p {
+  color: #eb87fa;
+}
+
+.pic2 span {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+  .pic {
+    flex-basis: calc(50% - 20px); /* Two items per row */
+  }
+  .pic {
+    text-align: center;
+  }
+  .pic img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial2 {
+    grid-template-columns: 1fr;
+  }
+
+  .pic2 {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+}
